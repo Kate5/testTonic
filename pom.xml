@@ -12,6 +12,28 @@
     <sourceDirectory>src</sourceDirectory>
     </build>
 
+    <properties>
+        <junit.version>4.12</junit.version>
+        <testng.version>6.9.10</testng.version>
+        <selenium.version>2.53.0</selenium.version>
+        <compiler.version>3.5.1</compiler.version>
+
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${compiler.version}</source>
+                    <target>${compiler.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <!--
     <plugins>
             </plugins>
